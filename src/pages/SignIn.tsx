@@ -4,6 +4,7 @@ import { toast } from "react-toastify";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import visibilityIcon from "../assets/svg/visibilityIcon.svg";
 import { IoIosArrowForward } from "react-icons/io";
+import OAuth from "../components/OAuth";
 
 interface SignInFormData {
   email: string;
@@ -95,7 +96,7 @@ const SignIn = () => {
           </div>
         </form>
 
-        {/* Google OAuth */}
+        <OAuth />
 
         <Link to="/sign-up" className="registerLink">
           Sign Up Instead
